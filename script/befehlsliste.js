@@ -1,5 +1,6 @@
 var Connect = new XMLHttpRequest();
-Connect.open("GET", "../Data/BefehlsListe.xml", true);
+//Connect.open("GET", "../Data/BefehlsListe.xml", true);
+Connect.open("GET", "https://raw.githubusercontent.com/YannicSteinert/YannicSteinert.github.io/main/Data/BefehlsListe.xml", true);
 Connect.setRequestHeader("Content-Type", "text/xml");
 Connect.send(null);
 
