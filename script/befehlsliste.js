@@ -5,7 +5,7 @@ function loadXMLDoc() {
 		myFunction(this);
 		}
 	};
-	xmlhttp.open("GET", "BefehlsListe.xml", true);
+	xmlhttp.open("GET", "https://github.com/YannicSteinert/YannicSteinert.github.io/blob/main/script/BefehlsListe.xml", true);
 	xmlhttp.send();
 }
 
