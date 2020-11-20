@@ -159,3 +159,8 @@
     min-height: 714px;
   }
 }
+
+.terminal_div {
+	overflow: auto;
+	height: 180px;
+}

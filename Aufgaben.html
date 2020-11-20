@@ -82,16 +82,16 @@
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-45 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <h5 class="u-align-left u-text u-text-default u-text-1">Aufgaben Titel</h5>
-                  <p class="u-text u-text-default u-text-2">Beispiel Text von einer Aufgabe. Hier wird ein bestimmter Sachverhalt dargestellt, eventuell noch irgendwelche Benutzer und Passwörter zur verfügung gestellt. Zusammen mit dem Aufgabentext und seinem Wissen, muss der Teilnehmer die Aufgabe lösen ......</p>
-                  <p class="u-text u-text-default u-text-3">Kathegorie Aufgabe 1/10</p>
+                  <h5 class="u-align-left u-text u-text-default u-text-1" id="aufgaben_titel">Aufgaben Titel</h5>
+                  <p class="u-text u-text-default u-text-2" id="aufgaben_text">Beispiel Text von einer Aufgabe. Hier wird ein bestimmter Sachverhalt dargestellt, eventuell noch irgendwelche Benutzer und Passwörter zur verfügung gestellt. Zusammen mit dem Aufgabentext und seinem Wissen, muss der Teilnehmer die Aufgabe lösen ......</p>
+                  <p class="u-text u-text-default u-text-3" id="kat_num">Kathegorie Aufgabe 1/10</p>
                   <div class="u-container-style u-expanded-width u-grey-90 u-group u-shape-rectangle u-group-1">
-                    <div class="u-container-layout u-container-layout-2">
-                      <p class="u-text u-text-4">user@gruppe:~$ _</p>
+                    <div class="u-container-layout u-container-layout-2 terminal_div">
+                      <p class="u-text u-text-4" id="terminal_text">user@gruppe:~$ _</p>
                     </div>
                   </div>
                   <form action="#" method="get" class="u-expanded-width u-palette-5-dark-3 u-search u-search-left u-search-1">
-                    <button class="u-search-button" type="submit">
+                    <button class="u-search-button" type="submit" onclick="terminal_confirm()">
                       <span class="u-search-icon u-spacing-10 u-search-icon-1">
                         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 41.999 41.999" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-612a"></use></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 41.999 41.999" x="0px" y="0px" id="svg-612a" style="enable-background:new 0 0 41.999 41.999;"><path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
@@ -99,16 +99,15 @@
 	c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"></path></svg>
                       </span>
                     </button>
-                    <input class="u-search-input" type="search" name="search" value="" placeholder="Suche">
+                    <input class="u-search-input" id="terminal_input" type="" name="" value="" placeholder="Eingabe">
                   </form>
-                  <a href="https://nicepage.com" class="u-align-right u-btn u-btn-round u-button-style u-custom-color-2 u-hover-palette-2-light-1 u-radius-5 u-btn-1">Nächste Aufgabe</a>
-                  <a href="https://nicepage.com" class="u-align-left u-btn u-btn-round u-button-style u-custom-color-2 u-hover-palette-2-light-1 u-radius-5 u-btn-2">Letzte Aufgabe</a>
+                  <a href="#" class="u-align-right u-btn u-btn-round u-button-style u-custom-color-2 u-hover-palette-2-light-1 u-radius-5 u-btn-1" id="btn_next">Nächste Aufgabe</a>
+                  <a href="#" class="u-align-left u-btn u-btn-round u-button-style u-custom-color-2 u-hover-palette-2-light-1 u-radius-5 u-btn-2" id="btn_last">Letzte Aufgabe</a>
                 </div>
               </div>
               <div class="u-container-style u-grey-30 u-layout-cell u-radius-10 u-shape-round u-size-15 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-3">
-                  <p class="u-text u-text-default u-text-5">Kathegorie 1<br>Kathegorie 2<br>...<br>...<br>...<br>
-                  </p>
+                <div class="u-container-layout u-container-layout-3" id="sidepanel">
+                  <p> kat ... </p>
                 </div>
               </div>
             </div>
@@ -134,4 +133,9 @@
       </a>. 
     </section>
   </body>
+  
+    	<!-- DATA JSON -->
+	<script src="data/aufgaben.js"></script>
+    <!-- \_,.- MEINE -.,_/ scripte -->
+	<script src="script/aufgaben.js"></script>
 </html>
